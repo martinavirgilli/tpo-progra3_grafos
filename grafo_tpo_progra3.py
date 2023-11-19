@@ -1,7 +1,6 @@
 # Biblioteca heapq para manejar la cola de prioridad
 import heapq
 
-
 class Grafo:
     def __init__(self):
         # Inicializar grafo con vértices y aristas
@@ -27,7 +26,7 @@ class Grafo:
     # Mostrar el grafo en la consola
     def mostrar_grafo(self):
         for vertice, aristas in self.grafo.items():
-            print(f"Vértice {vertice} está conectado a: {aristas}")
+            print(f"Vértice {vertice} conectado a: {aristas}")
 
 
 class Prim:
@@ -104,4 +103,4 @@ if __name__ == "__main__":
     print()
 
     distancias = f.aplicar()
-    print("Distancia entre pares (Floyd)", distancias)
+    print("Distancia entre pares (Floyd): ", distancias)
